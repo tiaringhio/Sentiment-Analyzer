@@ -8,6 +8,9 @@
     A telegram bot that determines the polarity of a message using machine learning.
   </p>
 
+[![Try it on telegram](https://img.shields.io/badge/try%20it-on%20telegram-0088cc.svg)](http://t.me/covid_sentiment_bot)
+[![test](https://badgen.net/badge/License/GPL/green)](https://github.com/tiaringhio/Sentiment-Analyzer/blob/master/LICENSE)
+
 ## Table of contents
 
 - [Table of contents](#table-of-contents)
