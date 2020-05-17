@@ -1,0 +1,4 @@
+# Telegram bot token
+
+telegram:
+  token: "YOUR TOKEN HERE" # Insert token here
