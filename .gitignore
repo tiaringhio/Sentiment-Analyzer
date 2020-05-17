@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 *.yaml
+
+2.md
