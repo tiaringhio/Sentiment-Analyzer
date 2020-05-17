@@ -19,7 +19,7 @@ from live_classifier import (additional_stop_words, remove_noise, sentiment,
                              getSentiment, getPolarity, getConfidence)
 
 # Importing token
-with open('..\\token.yaml', 'r') as file:
+with open('.\\token.yaml', 'r') as file:
     txt = yaml.load(file, Loader=yaml.FullLoader)
 token = txt['telegram']['token']
 
@@ -169,9 +169,9 @@ def wordcloud(update, context):
         cloud = WordCloud(width=500, height=500, collocations=False,
                           stopwords=stop_words).generate(text)
         image = cloud.to_image()
-        image.save('..\\Resources\\wc.png', 'PNG')
+        image.save('.\\Resources\\wc.png', 'PNG')
         # Sends the genarated image to the user
-        context.bot.send_photo(cid, photo=open('..\\Resources\\wc.png', 'rb'), reply_to_message_id=update.message.message_id,
+        context.bot.send_photo(cid, photo=open('.\\Resources\\wc.png', 'rb'), reply_to_message_id=update.message.message_id,
                                caption='Ecco la tua WordCloud %s' % (update.message.from_user.first_name))
     return WORDCLOUD
 

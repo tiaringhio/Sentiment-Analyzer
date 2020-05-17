@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
 # Loading model with pickle
-LRClassifier = "..\\Resources\\LRClassifier.pkl"
+LRClassifier = ".\\Resources\\LRClassifier.pkl"
 with open(LRClassifier, 'rb') as file:
     LRClassifier = pickle.load(file)
 
@@ -59,7 +59,6 @@ def sentiment(tweet):
 
     predictions.append(sentiment)
     predictions.append(polarity)
-    print(predictions)
     return predictions
 
 
