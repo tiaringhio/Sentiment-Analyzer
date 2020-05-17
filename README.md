@@ -83,7 +83,7 @@ Great for longer paragraphs of text, it will output a WordCloud similar to the o
     <p align="center">
     <img src="Resources\Screenshots\cloud2.png" width="500">
 
-# License
+## License
 
 Distributed under the GPL License. See `LICENSE` for more information.
 

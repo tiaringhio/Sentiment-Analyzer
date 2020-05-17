@@ -23,7 +23,7 @@ stemmer = SnowballStemmer('italian')
 
 # Additional stopwords found online
 def additional_stop_words():
-    with open('..\\Training\\stopwords.txt', 'r') as f:
+    with open('.\\Resources\\stopwords.txt', 'r') as f:
         additional_stopwords = f.readlines()
     additional_stopwords = [x.strip() for x in additional_stopwords]
     return additional_stopwords
