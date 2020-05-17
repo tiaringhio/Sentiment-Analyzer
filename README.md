@@ -78,7 +78,7 @@ It will analyze the text the user sends, answering with a positive or negative r
 #### WordCloud
 
 Command: `/wordcloud`.
-Great for longer paragraphs of text, it will output a WordCloud similar to the one one found above.
+Great for longer paragraphs of text, it will output a WordCloud.
 
 <br />
     <p align="center">
