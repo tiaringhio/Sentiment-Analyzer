@@ -41,10 +41,9 @@ def remove_noise(tweet_tokens, stop_words=(), additional_stop_words=()):
             cleaned_tokens.append(token.lower())
     return cleaned_tokens
 
+
 # Outputs sentiment based on user's message,
 # with customized messages based on the polarity value
-
-
 def sentiment(tweet):
     predictions = []
     custom_tokens = remove_noise(word_tokenize(tweet))
@@ -69,16 +68,19 @@ def sentiment(tweet):
     return predictions
 
 
+# Returns the sentiment to the bot
 def getSentiment(predictions):
     sent = predictions[0]
     return sent
 
 
+# Returns the polarity to the bot
 def getPolarity(predictions):
     pol = predictions[1]
     return pol
 
 
+# Returns the confidence to the bot
 def getConfidence(predictions):
     pol = predictions[1]
     confidence = ''

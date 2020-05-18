@@ -69,7 +69,7 @@ Command: `/predict`.
 
 <sub>N.B. If you start the bot you dont'have to send the `/predict` command because it's the default state, you will need to use it to switch between functions. </sub>
 
-It will analyze the text the user sends, answering with a positive or negative result, a degree of certainty (if the bot isn't sure about the result it will tell the user) and the polarity, for improved precision. Since this project has been made for the italian situation of COVID-19, it will analyze ialian text only.
+It will analyze the text the user sends, answering with a positive, mixed or negative result, a degree of certainty (if the bot isn't sure about the result it will tell the user) and the polarity, for improved precision. Since this project has been made for the italian situation of COVID-19, it will analyze ialian text only.
 
 <br />
     <p align="center">
