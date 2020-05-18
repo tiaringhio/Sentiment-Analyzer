@@ -41,6 +41,9 @@ def remove_noise(tweet_tokens, stop_words=(), additional_stop_words=()):
             cleaned_tokens.append(token.lower())
     return cleaned_tokens
 
+# Outputs sentiment based on user's message,
+# with customized messages based on the polarity value
+
 
 def sentiment(tweet):
     predictions = []
@@ -52,8 +55,12 @@ def sentiment(tweet):
     polarity = confidence_p - confidence_n
 
     sentiment = ''
-    if polarity > 0:
+    if polarity > 0.25:
         sentiment = 'positivo'
+    elif polarity >= 0 and polarity <= 0.25:
+        sentiment = 'misto'
+    elif polarity < 0 and polarity >= -0.25:
+        sentiment = 'misto'
     else:
         sentiment = 'negativo'
 

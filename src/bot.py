@@ -119,8 +119,12 @@ def predict(update, context):
             pol_rounded = round(polarity, 3)
             # gets confidence from the live_classifier
             confidence = getConfidence(result)
-            if(polarity >= 0):
+            if(polarity > 0.25):
                 emoji = '✅'
+            elif polarity >= 0 and polarity < 0.25:
+                emoji = '⚠'
+            elif polarity < 0 and polarity >= -0.25:
+                emoji = '⚠'
             else:
                 emoji = '❌'
             # Sends the user the results
