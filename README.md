@@ -4,6 +4,10 @@
     <img src="Resources\logo.svg" alt="Logo" width="130" height="130">
   </a>
   <h1 align="center">Sentiment Analyzer</h1>
+  <h2 align="center">The Bot is not active anymore</h2>
+  <p align="center">
+    You can still find the code, download it and try it for yourself.
+  </p>
   <p align="center">
     A telegram bot that determines the polarity of a message using machine learning.
   </p>
